@@ -1,5 +1,4 @@
 using Assets.Scripts.Data;
-using Newtonsoft.Json;
 using Photon.Pun;
 using TMPro;
 using UnityEngine;
@@ -14,14 +13,14 @@ namespace Assets.Scripts.UI
 
         public void SetInfo(DataPlayer player)
         {
-            string json = JsonConvert.SerializeObject(player);
+            string json = JsonUtility.ToJson(player);
             m_PhotonView.RPC("SetInfoRPC", RpcTarget.All, json);
         }
 
         [PunRPC]
         public void SetInfoRPC(string playerJson)
         {
-            var player = JsonConvert.DeserializeObject<DataPlayer>(playerJson);
+            var player = JsonUtility.FromJson<DataPlayer>(playerJson);
             m_Nickname.text = player.nickname;
             m_Score.text = "Score - " + player.score;
         }

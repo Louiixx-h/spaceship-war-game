@@ -1,5 +1,4 @@
 using Assets.Scripts.Data;
-using Newtonsoft.Json;
 using Photon.Pun;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,14 +12,14 @@ namespace Assets.Scripts.UI
 
         public void SetListView(List<DataPlayer> players)
         {
-            string json = JsonConvert.SerializeObject(players);
+            string json = JsonUtility.ToJson(players);
             m_PhotonView.RPC("InstantiateItemsRPC", RpcTarget.AllBuffered, json);
         }
 
         [PunRPC]
         void InstantiateItemsRPC(string playersJson)
         {
-            var players = JsonConvert.DeserializeObject<List<DataPlayer>>(playersJson);
+            var players = JsonUtility.FromJson<List<DataPlayer>>(playersJson);
             var playerList = players;
             foreach (var player in playerList)
             {
