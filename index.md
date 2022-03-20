@@ -1,4 +1,4 @@
-<img src="./Assets/Sprite/spaceship-war-transparent.png"/>
+<img src="./Assets/Sprite/spaceship-war.png"/>
 
 <h1>Space War Shooter 2D</h1>
 
