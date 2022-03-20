@@ -7,4 +7,4 @@
 
 Jogue com seus amigos em uma aventura pelo espaço, dentro de uma verdadeira guerra nas estrelas.
 Este jogo é multijogador online, você pode criar salas para chamar seus amigos para batalhar em
-uma partida 5 vs 5, onde cada equipe tem que destruir a base inimiga.
+uma partida PvP, onde ganha quem derrotar a nave inimiga primeira.
