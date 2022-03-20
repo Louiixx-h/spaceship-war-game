@@ -7,3 +7,9 @@ Jogue com seus amigos em uma aventura pelo espaço, dentro de uma verdadeira gue
 Este jogo é multijogador online, você pode criar salas para chamar seus amigos para batalhar em
 uma partida PvP, onde ganha quem derrotar a nave inimiga primeira.
 </p>
+
+<a href="https://github.com/Louiixx-h/spaceship-war/releases/download/v1.0.0-pre-alpha/Spaceship.War.zip"> 
+  <button> 
+    Download
+  </button>
+</a>
